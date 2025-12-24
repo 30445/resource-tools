@@ -1,0 +1,48 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 通用配置
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# TypeScript 和 JavaScript 文件
+[*.{ts,tsx,js,jsx}]
+indent_size = 2
+
+# CSS 和样式文件
+[*.{css,scss,sass,less,stylus}]
+indent_size = 2
+
+# HTML 文件
+[*.html]
+indent_size = 2
+
+# JSON 和配置文件
+[*.{json,jsonc,yml,yaml,md}]
+indent_size = 2
+
+# Markdown 文件
+[*.md]
+trim_trailing_whitespace = false
+
+# TypeScript 定义文件
+[*.d.ts]
+indent_size = 2
+
+# 构建配置文件
+[*.{json,jsonc}]
+indent_size = 2
+
+# 环境文件
+[*.env]
+trim_trailing_whitespace = false
+
+# 日志文件
+[*.log]
+trim_trailing_whitespace = false

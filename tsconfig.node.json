@@ -5,7 +5,11 @@
     "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "paths": {
+      "@/*": ["src/*"],
+    }
   },
   "include": ["vite.config.ts", "package.json", "electron"]
 }

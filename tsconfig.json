@@ -12,7 +12,10 @@
     "lib": ["ESNext", "DOM"],
     "allowImportingTsExtensions": true,
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "@/*": ["src/*"],
+    }
   },
   "include": ["src"],
   "references": [
