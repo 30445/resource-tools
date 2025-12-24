@@ -1,13 +1,13 @@
-import {rmSync} from 'node:fs'
+import { rmSync } from 'node:fs'
 import path from 'node:path'
-import {defineConfig} from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import electron from 'vite-plugin-electron/simple'
 import pkg from './package.json'
 
 // https://vitejs.dev/config/
-export default defineConfig(({command}) => {
-  rmSync('dist-electron', {recursive: true, force: true})
+export default defineConfig(({ command }) => {
+  rmSync('dist-electron', { recursive: true, force: true })
 
   const isServe = command === 'serve'
   const isBuild = command === 'build'
@@ -16,9 +16,8 @@ export default defineConfig(({command}) => {
   return {
     resolve: {
       alias: {
-        '@/*': path.join(__dirname, 'src/*')
+        '@': path.join(__dirname, 'src')
       },
-      extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     plugins: [
       react(),

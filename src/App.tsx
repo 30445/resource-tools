@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import UpdateElectron from '@/components/update/index.tsx'
+import UpdateElectron from '@/components/update'
 import logoVite from './assets/logo-vite.svg'
 import logoElectron from './assets/logo-electron.svg'
-import './App.css'
+import './App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
